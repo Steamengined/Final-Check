@@ -17,13 +17,15 @@ void Process (string[] arraystart, string[] arrayfinish)
         }
 };
 
-void Print (string[] arrayfinish)
+void PrintArray (string[] arrayfinish)
 {
-    for (i=0; arrayfinish.Length < 0; i++)
+    for (i=0; i < arrayfinish.Length; i++)
     {
         Console.Write($"{arrayfinish[i]} ");
     }
-    Console.WriteLine();   
+    Console.WriteLine(); 
 }
+
 Process(arraystart, arrayfinish);
-Print(arrayfinish);
+
+PrintArray(arrayfinish);
